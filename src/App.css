@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,500;10..48,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #C3CBE3;
+  color: #0D2464;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  text-align: center;
+
+}
+
+/* HEADER */
+header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  width: 70%;
+  margin: auto;
+  font-weight: 500;
+  margin-top: 20px;
+  box-shadow: 6px 6px #0D2464;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+header input {
+  border: 2px solid #0D2464;
+  border-radius: 5px;
+  padding: 4px;
+  color: #0D2464;
+  font-weight: 500;
+  margin: 15px 0px;
+  font-size: 1.3rem;
+}
+
+header form button {
+  cursor: pointer;
+  background-color: #0D2464;
+  color: #FFFFFF;
+  padding: 14px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header form button:hover {
+  background-color: #2a4696;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+  color: red; 
+  margin: 25px 0px;
+  padding: 0px 30px;
+}
+/* MOVIES */
+main {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.ctn-movies {
+  margin: auto;
+  padding: 0 30px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* CTN-MOVIES */
+
+.ctn-images {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.ctn-images-head {
+  
+  padding: 20px 0px 10px;
+  min-height: 105px;
+  background-color: #FFFFFF;
+  color: #0D2464;
+  font-weight: 500;
+  border-radius: 10px 10px 0px 0px;
+    box-shadow: 4px 4px 3px #0D2464;
+
+
+}
+
+.ctn-images-body img {
+  width: 100%;
+    box-shadow: 4px 4px 3px #0D2464;
+
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  header{
+    width: 85%;
+  }
+  header h1{
+    font-size: 2rem;
+  }
+  header form label input{
+    font-size: 1rem;
+  }
+  header form button{
+    font-size: 0.7rem;
+  }
+  h2{
+    font-size: 1.2rem;
+    padding: 0 30px;
+  }
+  
+}
