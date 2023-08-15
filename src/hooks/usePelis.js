@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react"
 
 export function usePelis(){
 
-    // const peliculas = resultados.Search
   
     const [busqueda, setBusqueda] = useState('')
     const [errorBusqueda, setErrorBusqueda] = useState('')
@@ -33,8 +32,6 @@ export function usePelis(){
           let json = await response.json()
   
           if(json.Response == 'True'){
-  
-            console.log('todo bien')
             setResultadosPeliculas(json.Search)
             setErorrFetch(false)
           }else{
@@ -67,7 +64,13 @@ export function usePelis(){
   
   }, [busqueda])
   return{
-    busqueda, errorBusqueda, erorrFetch,resultadosPeliculas, handleChange, handleSubmit, getMovies
+    busqueda, 
+    errorBusqueda, 
+    erorrFetch,
+    resultadosPeliculas,
+    handleChange, 
+    handleSubmit,
+    getMovies
   }
 
 }

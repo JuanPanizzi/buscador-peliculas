@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
-import './App.css'
-import resultados from './resultados/resultados.json'
 import { Formulario } from './componentes/Formulario'
 import { Peliculas } from './componentes/Peliculas'
 import { usePelis } from './hooks/usePelis'
+import './App.css'
 
 
 function App() {
