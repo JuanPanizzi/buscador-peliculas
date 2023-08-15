@@ -11,7 +11,7 @@ export function usePelis(){
   
     // const API_KEY = 'ca54c657'
     
-    const url = `http://www.omdbapi.com/?apikey=ca54c657&s=${busqueda}`
+    const url = `https://www.omdbapi.com/?apikey=ca54c657&s=${busqueda}`
   
     const isFirstInput = useRef(true)
   
